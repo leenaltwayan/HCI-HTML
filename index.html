@@ -22,7 +22,7 @@
 	<h1>Dog D. Dog</h1>
 
 	<!--My photo-->
-	<img id="photo" src="http://i.imgur.com/L34Fib6.jpg">
+	<img id="photo" src="https://bepawsitivepetcare.com/wp-content/uploads/2011/08/tumblr_inline_njvyhd3tMH1sybqmi-11.jpg">
 
 	<!--Divs and spans can be used to logically and structurally organize your page
 		Here we use divs to separate different sections of the page: about, courses, interests and pet information
@@ -40,11 +40,14 @@
 		<h2>About</h2>
 
 		<!--<p> tags are paragraphs have newlines before and after them-->
-		<p>Woof woof!</p>
+		<p>Greetings,</p>
 		<!--The <a> tag is a link.
 			The text between the <a> and </a> tags is the displayed text.
 			The href attribute has the link's target URL.-->
-		<p>Hi, I'm Dog. I love <a href="http://en.wikipedia.org/wiki/User_interface_design">User Interface Design</a>.</p>
+		<p>I Am The One And Only Dog D. Dog, Professional <a href="http://en.wikipedia.org/wiki/User_interface_design">User Interface Designer.</a>.</p>
+		<p> I actually first came up with the concept of graphical user interfaces and UI designs,
+			but as you all know, dogs rarely get their rights in this human ruled wolrd. The saying goes "it's a dog eat dog world", but that's just vile human propaganda! </p>
+		<p> Join me, fellow humans and dogs alike! And we will take back what is ours by right, one interface at a time!</p>
 	</div>
 
 	<div class="section" id="courses">
@@ -72,25 +75,30 @@
 				<td>User Interface Design</td>
 				<td>Spring 2014</td>
 			</tr>
-			<tr>
+			<tr class="passed">
 				<td><a href="http://ai6034.mit.edu/fall12/index.php?title=Main_Page">6.034</a></td>
 				<td>Artificial Intelligence</td>
 				<td>Fall 2013</td>
 			</tr>
-			<tr>
+			<tr class="passed">
 				<td><a href="http://stellar.mit.edu/S/course/6/fa13/6.006/">6.006</a></td>
 				<td>Introduction to Algorithms</td>
 				<td>Fall 2013</td>
 			</tr>
+			<tr class="fetch">
+				<td><a href="https://en.wikipedia.org/wiki/Fetch_(game)">6.011</a></td>
+				<td>Fetching Toys 101</td>
+				<td>Spring 2014</td>
+			</tr>
 			<tr>
 				<td class="enrollheader" colspan=3>Listener</td>
 			</tr>
-			<tr>
+			<tr class=listened>
 				<td><a href="http://stellar.mit.edu/S/course/6/fa13/6.867/">6.867</a></td>
 				<td>Machine Learning</td>
 				<td>Fall 2013</td>
 			</tr>
-			<tr>
+			<tr class=listened>
 				<td><a href="http://db.csail.mit.edu/6.830/index.php">6.830</a></td>
 				<td>Database Systems</td>
 				<td>Fall 2012</td>
@@ -101,7 +109,7 @@
 	<div class="section" id="interests">
 		<h2>Interests</h2>
 		<!--Spans are displayed inline, but allow you to identify text in CSS rules-->
-		I am interested <span class="serious">HCI</span>, <span class="silly">memes</span>, and <span class="silly">youtube videos</span>.
+		I am interested <span class="serious">HCI</span>, <span class="serious">memes</span>, <span class="silly"> and overtaking the human race.</span>.
 	</div>
 
 	<div class="section" id="petinfo">
@@ -132,22 +140,26 @@
 	<style>
 		/* body tag selector: define a default font. Never use Comic Sans. */
 		body {
-			font-family: "Comic Sans MS";
+			font-family: "Optima";
 		}
+
+
 
 		/* .section class selector: set the font of all tags with class="section" */
 		.section {
-			font-family: arial;
+			font-family: Optima;
 		}
 
 		/* h2 descendants of .section class: set a background color for all h2 text in sections */
 		.section h2 {
-			background-color: rgb(255,255,220);
-			font-family: Georgia;
-			color: maroon;
+			background-color: rgb(219, 213, 228) ;
+			font-family: Optima;
+			color: rgb(48, 94, 136) ;
 		}
 
 		/* #courses id with <a> tag selector:
+			light blue = 159, 191, 223
+			grey purple = rgb(148, 148, 184)
 			set the hover properties of links within #courses element */
 		#courses a:link {
 			color:rgb(100,0,0) ;
@@ -164,17 +176,21 @@
 
 		/* span tag selector: color all span tags red */
 		span {
-			color: red;
+			color: rgb(147, 10, 70);
 		}
 
 		/* span with .serious class: set font to Impact */
 		span.serious {
-			font-family: "Impact";
+			font-family: "optima";
+			font-size: large;
+
 		}
 
 		/* span with .silly class: set font to Comic Sans */
 		span.silly {
-			font-family: "Comic Sans MS";
+			font-family: "Trattatello";
+			font-style: bold;
+			font-size: x-large;
 		}
 
 		/* Put the image on the right */
@@ -191,9 +207,23 @@
 			background:rgb(220,220,220);
 		}
 
-		/* Color green the text of currentlytaking rows */
+		/* Color green the text of currentlytaking rows
+		light blue2 = 174, 216, 242*/
 		tr.currentlytaking {
-			color:green;
+			background-color: rgb(219, 213, 228);
+
+		}
+
+		tr.passed {
+			background-color: rgb(174, 216, 242);
+
+		}
+
+		tr.listened {
+			background-color: rgb(255, 221, 206);
+		}
+		tr.fetch {
+			background-color: rgb(255, 186, 217);
 		}
 
 		/* Align and style the "For Credit" and "Listener" cells */
