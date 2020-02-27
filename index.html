@@ -22,7 +22,7 @@
 	<h1>Dog D. Dog</h1>
 
 	<!--My photo-->
-	<img id="photo" src="https://bepawsitivepetcare.com/wp-content/uploads/2011/08/tumblr_inline_njvyhd3tMH1sybqmi-11.jpg">
+		<img id="photo" src="https://bepawsitivepetcare.com/wp-content/uploads/2011/08/tumblr_inline_njvyhd3tMH1sybqmi-11.jpg">
 
 	<!--Divs and spans can be used to logically and structurally organize your page
 		Here we use divs to separate different sections of the page: about, courses, interests and pet information
@@ -53,9 +53,11 @@
 	<div class="section" id="courses">
 		<h2>Courses</h2>
 		<p>Here are some courses I've taken:</p>
+		<!-- style="margin-left: 5%; margin-right:30%;"-->
 
 		<!--Tables can be used to group text or images into rows and columns-->
-		<table>
+		<table style="width:50%;>
+			<!--  margin-left:12%;margin-right:auto;"-->
 			<!--Each <tr> is a row-->
 			<tr>
 				<!--Each <th> or <td> is a cell.
@@ -109,7 +111,7 @@
 	<div class="section" id="interests">
 		<h2>Interests</h2>
 		<!--Spans are displayed inline, but allow you to identify text in CSS rules-->
-		I am interested in <span class="serious">HCI</span>, <span class="serious">memes</span>, <span class="silly"> and overtaking the human race</span>.
+		<p>I am interested in <span class="serious">HCI</span>, <span class="serious">memes</span>, <span class="silly"> and overtaking the human race</span>.</p>
 	</div>
 
 	<div class="section" id="petinfo">
@@ -141,8 +143,31 @@
 		/* body tag selector: define a default font. Never use Comic Sans. */
 		body {
 			font-family: "Optima";
+			text-align: left;
+		}
+/*
+		h1 {
+			text-indent: -25%;
 		}
 
+
+		#interests p{
+			margin-left: 7%;
+			margin-right: 35%;
+		}
+		#interests h2{
+			padding-right: 380px;
+		}
+
+*/
+		table, th, td {
+  		border: 2px solid black;
+			padding: 10px;
+		}
+
+		td {
+			text-align: center;
+		}
 
 
 		/* .section class selector: set the font of all tags with class="section" */
