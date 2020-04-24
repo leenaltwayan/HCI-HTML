@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+
+<!--Here's a worked example of HTML and CSS from Lab 1!
+	HTML consists of a hierarchy of elements.
+	
+	Each element has an opening tag and (most of the time) a closing tag.
+	For example, the whole document is enclosed in the html element, delimited by the <html> and </html> tags.
+	You can also close tags immediately using a slash before the > symbol: A newline is represented by <br />.
+
+	Each tag can have attributes set as name="value" pairs.
+	For example, the image element needs a source URL for the image file: <img src="dog.jpg" />
+-->
+
+<html>
+<head>
+	<!-- The title shows up in the browser toolbar -->
+	<title>Leen's Website</title>
+	<script src="webStorageSet.js" defer> </script> 
+</head>
+
+<body>
+	<!--A header for the page-->
+	<center> <h1> Hello! My name is Leen Altwayan </h1> </center>
+
+	<div class = "container">
+        
+        <h2> Tell me about yourself! </h2>
+        <label> <b>Full Name:   </b> </label>
+        <input id="name" type="text" placeholder="Enter your name"> <br>
+    
+		<h3>My interests are: </h3>
+        <form action="result.html" method="post">
+            <input id="Reading" type="checkbox" name="interest" value="Reading">
+            <label for="Reading">Reading</label>
+			
+            <input id="Listening to music" type="checkbox" name="interest" value="Listening to music">
+            <label for="Listening to music">Listening to music</label>
+        
+            <input id="Playing video games" type="checkbox" name="interest" value="Playing video games">
+            <label for="Playing video games">Playing video games</label>
+        
+            <input id="Watching films/shows" type="checkbox" name="interest" value="Watching films/shows">
+            <label for="Watching films/shows">Watching films/shows</label>
+            
+            <h3> What would you like to see? </h3>
+            
+            <input id="meme" type="Radio" name="choice" value="meme">
+            <label for="meme">Meme, please!</label>
+            
+            <input id="cv" type="radio" name="choice" value="cv">
+            <label for="cv">My CV</label> <br> <br>
+            
+            <input type="submit" value="Submit" id="sBtn"> 
+            
+		</form>
+        
+	</div>
+
+
+	<!--This is the style section.
+		It consists of CSS rules, which could also be included as a separate file.-->
+	<style>
+		/* body tag selector: define a default font. Never use Comic Sans. */
+		body {
+			font-family: "Times New Roman";
+            color: white;
+            background-image: url(6620100_preview.png);
+            background-size: cover;
+		}
+        
+        .container {
+            font-family: "Times New Roman";
+            color: black;
+            padding: 16px;
+            text-align: center; 
+            border-radius: 25px;
+            border: 2px solid #d9d9d9;
+            width: 70%;
+            margin:auto;
+            background-color: white;
+            opacity:60%;
+        }
+
+
+	</style>
+</body>
+</html>
