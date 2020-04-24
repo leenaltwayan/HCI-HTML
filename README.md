@@ -1,6 +1,6 @@
 # HCI-HTML
 
-Homework #2 - CSC 440 - Human Computer Interaction
+Homework #3 - CSC 440 - Human Computer Interaction
 
 # Homework Description
 
