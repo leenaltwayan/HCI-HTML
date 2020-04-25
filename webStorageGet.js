@@ -14,7 +14,7 @@ function getUserData() {
     else{
       document.getElementById("cv").setAttribute("href","https://www.dropbox.com/s/uzcua04mpqzlxx1/Leen%20Altwayan%20CV.pdf?dl=0");
       var cv = document.getElementById("cv");
-      var text = document.createTextNode("Here's the CV you asked for");
+      var text = document.createTextNode("Here's that CV you asked for");
       cv.appendChild(text);
     }    
 
